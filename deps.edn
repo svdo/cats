@@ -1,0 +1,12 @@
+{:paths ["src"]
+ :deps {org.clojure/clojure       {:mvn/version "1.10.3"}
+        org.clojure/clojurescript {:mvn/version "1.10.844"}
+        org.clojure/core.async    {:mvn/version "0.4.474"}
+        org.clojure/test.check    {:mvn/version "0.9.0"}
+        org.clojure/core.match    {:mvn/version "0.3.0-alpha4"}
+        manifold/manifold         {:mvn/version "0.1.6"}
+        funcool/promesa           {:mvn/version "5.1.0"}}
+ :aliases {:test   {:extra-paths ["test" "dev"]
+                    :extra-deps {lambdaisland/kaocha {:mvn/version "1.0.829"}
+                                 org.clojure/tools.namespace {:mvn/version "0.2.11"}}}
+           :runner {:main-opts  ["-m" "kaocha.runner"]}}}
