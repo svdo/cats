@@ -18,3 +18,5 @@ pom.xml.asc
 .\#*
 /.nrepl-history
 /nashorn_code_cache
+/.cpcache
+/.lsp/sqlite.db
